@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart & Sparsam – Städtips och Vardagstricks</title>
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#f0f8ff;
+    color:#222;
+    font-size:18px;
+    line-height:1.7;
+}
+header {
+    background-color:#3399ff;
+    color:white;
+    padding:25px 20px;
+    text-align:center;
+}
+header h1 {
+    margin:0;
+    font-size:3em;
+}
+header p {
+    font-size:1.3em;
+}
+nav {
+    background-color:#80c1ff;
+    padding:12px;
+    text-align:center;
+}
+nav a {
+    margin:0 20px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:1.1em;
+}
+nav a:hover {
+    text-decoration:underline;
+}
+.section {
+    max-width:900px;
+    margin:50px auto;
+    padding:25px;
+    background-color:#b3d9ff;
+    border-radius:15px;
+}
+.section h2 {
+    text-align:center;
+    font-size:2em;
+    margin-bottom:25px;
+}
+.article-card {
+    background-color:#d9ecff;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+.article-card h3 {
+    margin-top:0;
+    font-size:1.5em;
+}
+.article-card p {
+    font-size:1.1em;
+    margin-bottom:10px;
+}
+.button {
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background-color:#3399ff;
+    color:white;
+    cursor:pointer;
+    margin-top:15px;
+    font-size:1.1em;
+}
+.button:hover {
+    background-color:#007acc;
+}
+.details {
+    display:none;
+    margin-top:15px;
+    padding:15px;
+    background-color:#cce6ff;
+    border-radius:8px;
+    font-size:1.1em;
+}
+.comment-section {
+    margin-top:30px;
+}
+.comment-section input, .comment-section textarea {
+    width:100%;
+    padding:12px;
+    margin:6px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    font-size:1.1em;
+}
+.comment-section button {
+    margin-top:6px;
+    font-size:1.1em;
+}
+.comment {
+    background-color:#cce6ff;
+    padding:12px;
+    border-radius:5px;
+    margin:6px 0;
+    font-size:1.1em;
+}
+footer {
+    background-color:#3399ff;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    font-size:1.1em;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Smart & Sparsam</h1>
+    <p>Städtips, tricks och DIY-projekt för ett enklare liv!</p>
+</header>
+
+<nav>
+    <a href="#städning">Städtips</a>
+    <a href="#vardagstips">Vardagstips</a>
+    <a href="#diy">DIY & Hemmafix</a>
+    <a href="#about">Om oss</a>
+</nav>
+
+<!-- STÄDTIPS -->
+<div class="section" id="städning">
+<h2>Städtips för hemmet</h2>
+
+<div class="article-card">
+<h3>Ta bort svåra fläckar på kläder</h3>
+<p>Har du en envis fläck på favorittröjan? Välj rätt metod för typen av fläck.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Svåra fläckar kan vara fett, blod, kaffe eller vin. Fettfläckar tas bäst bort med diskmedel direkt på fläcken i 10–15 minuter innan tvätt. Blodfläckar fungerar bäst med kallt vatten och lite salt – gnid försiktigt. Kaffe och te kan behandlas med lite diskmedel i varmt vatten. Undvik varmt vatten på proteinfläckar eftersom det kan göra fläcken permanent. Att agera snabbt är nyckeln. Steg-för-steg: identifiera fläcken → välj metod → behandla → tvätta → kontrollera före torkning.</p>
+</div>
+</div>
+
+<div class="article-card">
+<h3>Rengöring av kök och vitvaror</h3>
+<p>Så håller du kyl, ugn och spis skinande rena utan starka kemikalier.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Använd naturliga produkter som vinäger, bakpulver eller citron. Ta ut hyllor i kyl och frys för separat rengöring. Blötlägg ugnsluckor med bakpulver och varmt vatten 30 min innan avtorkning. Daglig rengöring av spis och bänkar räcker med en fuktig trasa och lite diskmedel. Lite varje dag minskar behovet av större städpass.</p>
+</div>
+</div>
+
+<div class="article-card">
+<h3>Organisera badrum och förvaring</h3>
+<p>Få ordning på handdukar, smink och rengöringsprodukter med smarta knep.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Använd korgar eller lådor för småsaker. Rulla handdukar istället för att vika för bättre plats. Spraya vinäger och vatten på kakel och fogar för kalkborttagning. 5 minuters daglig rutin håller badrummet fräscht och minskar behovet av större städningar. Planera placeringen av produkter för enkel åtkomst och minimal röra.</p>
+</div>
+</div>
+</div>
+
+<!-- VARDAGSTIPS -->
+<div class="section" id="vardagstips">
+<h2>Vardagstips</h2>
+
+<div class="article-card">
+<h3>Effektiv planering av veckans uppgifter</h3>
+<p>Lär dig prioritera och skapa rutiner som sparar tid varje dag.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Skriv en lista över alla uppgifter och prioritera dem. Dela upp stora uppgifter i mindre steg. Använd kalender eller appar för påminnelser. Avsätt tid för återhämtning. Denna metod ger överblick, minskar stress och gör att du kan fokusera på det som verkligen är viktigt.</p>
+</div>
+</div>
+
+<div class="article-card">
+<h3>Smart shopping och sparande</h3>
+<p>Hitta de bästa erbjudandena, använd appar och undvik impulsköp.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Använd appar för rabatter och prisjämförelser. Handla alltid med lista och håll dig till den. Köp större mängder av produkter du ofta använder när det är erbjudande, men undvik onödiga köp. Planera inköp efter säsongens varor för billigare och fräschare produkter. Små justeringar sparar pengar över tid och gör vardagen enklare.</p>
+</div>
+</div>
+</div>
+
+<!-- DIY & HEMMAFIX -->
+<div class="section" id="diy">
+<h2>DIY & Hemmafix</h2>
+
+<div class="article-card">
+<h3>Skapa egen väggdekoration</h3>
+<p>Enkla steg-för-steg guider för snygga, billiga dekorationer till hemmet.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Använd återvunnet material som träpinnar, tygbitar eller gamla ramar. Måla, limma eller häng upp med snören. Planera mönster och färger innan du börjar för bästa resultat. DIY-projekt ger både personlig touch och sparar pengar jämfört med färdiga produkter. Perfekt att göra tillsammans med familj eller vänner.</p>
+</div>
+</div>
+
+<div class="article-card">
+<h3>Smarta förvaringslösningar</h3>
+<p>Maximera utrymme med enkla DIY-lösningar du kan göra själv.</p>
+<button class="button" onclick="toggleDetails(this)">Läs mer</button>
+<div class="details">
+<p>Använd vertikala ytor, häng hyllor och etiketterade lådor. Kombinera öppna hyllor för dekorativa saker med stängda lådor för mindre snygga föremål. Multifunktionella möbler som sängar med förvaring under eller pallar med förvaringsutrymme är perfekta. Små justeringar gör hemmet både snyggt och organiserat.</p>
+</div>
+</div>
+</div>
+
+<!-- OM OSS -->
+<div class="section" id="about">
+<h2>Om oss</h2>
+<p>Vi är två killar som vill hjälpa människor leva smartare och spara pengar. Här delar vi tips, guider och DIY-projekt som gör vardagen enklare och roligare!</p>
+</div>
+
+<!-- KOMMENTARER -->
+<div class="section comment-section">
+<h2>Kommentera & Dela dina tips</h2>
+<input type="text" id="commentName" placeholder="Ditt namn">
+<textarea id="commentText" placeholder="Din kommentar" rows="3"></textarea>
+<button class="button" onclick="addComment()">Skicka</button>
+<div id="commentsContainer"></div>
+</div>
+
+<footer>
+<p>&copy; 2026 Smart & Sparsam | Tips för ett enklare liv</p>
+</footer>
+
+<script>
+// Kommentarer
+function addComment() {
+    const name = document.getElementById('commentName').value.trim();
+    const text = document.getElementById('commentText').value.trim();
+    if(name && text) {
+        const container = document.getElementById('commentsContainer');
+        const div = document.createElement('div');
+        div.className = 'comment';
+        div.innerHTML = `<strong>${name}:</strong> ${text}`;
+        container.prepend(div);
+        document.getElementById('commentName').value = '';
+        document.getElementById('commentText').value = '';
+    }
+}
+
+// Läs mer funktion
+function toggleDetails(button) {
+    const details = button.nextElementSibling;
+    if(details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "Läs mer";
+    } else {
+        details.style.display = "block";
+        button.textContent = "Visa mindre";
+    }
+}
+</script>
+
+</body>
+</html>
