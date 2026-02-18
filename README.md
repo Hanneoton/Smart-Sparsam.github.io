@@ -18,6 +18,4 @@ Denna webbplats erbjuder enkla och användbara tips som hjälper dig att göra v
 2. Utforska tipsen och använd dem i din vardag.
 3. Uppdateringar sker automatiskt när du laddar upp nya filer till GitHub Pages.
 
-## Kontakt
 
-Om du har frågor eller förslag kan du kontakta oss via e-post: exempel@dittforetag.se
